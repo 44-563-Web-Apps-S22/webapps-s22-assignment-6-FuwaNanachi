@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ 
+<body>
+<title>Computer</title>
+<h2>Orders a Computer</h2>
+
+<form>
+    <label for="memory">Extra Memory </label>
+    <input type ="checkbox" id="memory" value= "extra" name="memory"> <br>
+
+    <label for="mouse">Mouse </label>
+    <input type ="checkbox" id="mouse" name="mouse" value ="mouse" autofocus> <br>
+
+    <label for="cell">Cell service </label>
+    <input type ="checkbox" id="cell" name="cell" value = "cell" autofocus> <br>
+
+    <input type="button" onclick="orderComputer()" value="Order a computer">
+</form>
+
+
+<p id="result">This text will be replaced </p>
+
+<script> 
+var my_computer = {}
+function orderComputer (){
+    let my_computer = {}
+    memory = document.getElementById("memory").value
+    mouse = document.getElementById("mouse").value
+    cell = document.getElementById("cell").value
+    out = document.getElementById("result")
+    function orderComputer(){
+    
+          if(document.getElementById('memory').checked){
+             my_computer['memory'] = 'true'
+             //console.log(my_computer)
+          }
+          else if(document.getElementById('memory').checked == false){
+              my_computer['memory'] = 'false'
+              //console.log(my_computer)
+          }
+          else if(document.getElementById('mouse').checked){
+              my_computer['mouse'] = 'true'
+              //console.log(my_computer)
+          }
+          else if(document.getElementById('mouse').checked == false){
+              my_computer['mouse'] = 'false'
+              //console.log(my_computer)
+          }
+          else if(document.getElementById('cell').checked){
+              my_computer['cell'] = 'true'
+              //console.log(my_computer)
+          }
+          else if(document.getElementById('cell').checked == false){
+                my_computer['cell'] = 'false'
+                //console.log(my_computer)
+          }
+          
+      }
+      out.innerHTML = my_computer
+}
+</script>
+
+</body>
+</html> 
