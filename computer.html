@@ -20,7 +20,7 @@
     <input type="button" onclick="orderComputer()" value="Order a computer"> <br> <br>
 
     <label for="engraved"></label>
-    <input type ="text" id="engraved1" name="engraved1" > <br>
+    <input type ="text" id="engraved1" name="engraved1" value = "Enter a property"> <br>
     <input type ="text" id="engraved2" name="engraved2"  value = "Enter a value" autofocus><br>
     <input type="button" onclick="updateComputer()" value="Update the computer">
 </form>
@@ -68,11 +68,13 @@ function orderComputer(){
 }
 function updateComputer(){
         
-        //engraved1 = document.getElementById["engraved1"].value
-        //engraved2 = document.getElementById["engraved2"].value
+        engraved1 = document.getElementById["engraved1"].value
+        engraved2 = document.getElementById["engraved2"].value
         //my_computer['property'] = JSON.stringify(getElementById["engraved1"].value)
-        //document.getElementById["engraved1"]
-        //my_computer['value'] = document.getElementById["engraved2"].value
+        document.getElementById["engraved1"]
+        document.getElementById["engraved2"]
+        my_computer['value'] = document.getElementById["engraved1"].value
+        my_computer['value'] = document.getElementById["engraved2"].value
         
         
 } 
